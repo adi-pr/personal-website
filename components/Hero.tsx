@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { motion as m } from "framer-motion";
 
@@ -14,10 +14,16 @@ const Hero = () => {
       className={`${staatliches.className} z-20 bg-[#191923] text-white w-full h-[50vh] md:h-[100vh] landscape:h-[100vh] flex justify-center items-center relative overflow-hidden`}
     >
       <ScrollingText />
-      <div className="max-w-[1000px] lg:text-[80px] md:text-[64px] text-[32px] z-10 flex flex-col items-center">
-        <m.div 
-
-        > 
+      <m.div
+        className="max-w-[1000px] lg:text-[80px] md:text-[64px] text-[32px] z-10 flex flex-col items-center"
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        animate="visible"
+      >
+        <div>
           <Image
             src="/hero-icon.svg"
             alt="Hero Icon"
@@ -25,7 +31,7 @@ const Hero = () => {
             height={80}
             className="object-contain"
           />
-        </m.div>
+        </div>
         <div>
           <p>ADITYA PRASAD:</p>
         </div>
@@ -37,7 +43,7 @@ const Hero = () => {
         >
           <p>🪄THE CODE WIZARD</p>
         </m.div>
-      </div>
+      </m.div>
     </section>
   );
 };

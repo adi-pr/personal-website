@@ -2,6 +2,8 @@
 
 import { Staatliches, Unica_One } from "next/font/google";
 
+import { motion as m } from "framer-motion";
+
 import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
@@ -14,7 +16,20 @@ const About = () => {
   return (
     <section className="bg-[#191923] md:px-20  py-5">
       <BgParticles />
-      <div className="md:flex-row justify-between p-4  md:p-8">
+      <m.div
+        className="md:flex-row justify-between p-4  md:p-8"
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        whileInView="visible"
+        initial="hidden"
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.25,
+          delay: 0.1,
+        }}
+      >
         <div className="w-full ">
           <h2
             className={`${staatliches.className} text-[16px] text-[#F39237] lg:text-[16px] md:text-[16px]`}
@@ -30,7 +45,7 @@ const About = () => {
             </h3>
           </div>
         </div>
-      </div>
+      </m.div>
     </section>
   );
 };
