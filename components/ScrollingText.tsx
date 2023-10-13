@@ -83,7 +83,7 @@ export default function ScrollingText() {
   return (
     <section className="absolute opacity-60 flex flex-col justify-between h-full items-center ">
       <ParallaxText baseVelocity={-3}>Aditya Prasad</ParallaxText>
-      <ParallaxText baseVelocity={3}>The Code Wizard | </ParallaxText>
+      <ParallaxText baseVelocity={3}>The Future Software Engineer | </ParallaxText>
     </section>
   );
 }
