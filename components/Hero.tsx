@@ -11,7 +11,7 @@ const staatliches = Staatliches({ subsets: ["latin"], weight: ["400"] });
 const Hero = () => {
   return (
     <section
-      className={`${staatliches.className} z-20 bg-[#191923] text-white w-full h-[50vh] md:h-[100vh] landscape:h-[100vh] flex justify-center items-center relative overflow-hidden`}
+      className={`${staatliches.className} z-0 md:z-20 bg-[#191923] text-white w-full h-[50vh] md:h-[100vh] landscape:h-[100vh] flex justify-center items-center relative overflow-hidden`}
     >
       <ScrollingText />
       <m.div
