@@ -1,4 +1,3 @@
-import { Navbar } from "@/components";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -7,7 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Aditya (Ruben) Prasad",
-  description: "Personal Website",
+  description:
+    "Aditya Prasad is a second year computer science student aspiring to be a software engineer",
 };
 
 export default function RootLayout({
@@ -17,10 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
