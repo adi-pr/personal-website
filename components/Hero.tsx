@@ -15,13 +15,17 @@ const Hero = () => {
     >
       <ScrollingText />
       <div className="max-w-[1000px] lg:text-[80px] md:text-[64px] text-[32px] z-10 flex flex-col items-center">
-        <Image
-          src="/hero-icon.svg"
-          alt="Hero Icon"
-          width={80}
-          height={80}
-          className="object-contain"
-        />
+        <m.div 
+
+        > 
+          <Image
+            src="/hero-icon.svg"
+            alt="Hero Icon"
+            width={80}
+            height={80}
+            className="object-contain"
+          />
+        </m.div>
         <div>
           <p>ADITYA PRASAD:</p>
         </div>
@@ -31,7 +35,7 @@ const Hero = () => {
           whileTap={{ scale: 0.9 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
-          <p>THE CODE WIZARD</p>
+          <p> <span className="opacity-60">🪄</span> THE CODE WIZARD</p>
         </m.div>
       </div>
     </section>
