@@ -1,4 +1,8 @@
+"use client"
+
 import { Instrument_Sans, Unica_One } from "next/font/google";
+
+import CountUp from 'react-countup';
 
 const instrument_sans = Instrument_Sans({
   subsets: ["latin"],
@@ -6,10 +10,10 @@ const instrument_sans = Instrument_Sans({
 });
 const unica_One = Unica_One({ subsets: ["latin"], weight: ["400"] });
 
-const BigText = ({ text, subtext }: { text: string, subtext: string }) => {
+const BigText = ({ text, subtext }: { text: number, subtext: string }) => {
    return (
     <div className="py-4 md:p-0">
-        <h2 className={`${unica_One.className} text-white text-[32px]`}>{text}</h2>
+        <h2 className={`${unica_One.className} text-white text-[32px]`}><CountUp start={0} end={text} duration={2.75} enableScrollSpy={true} /></h2>
         <p className={`${instrument_sans.className} text-base text-[#F39237]`}>{subtext}</p>
     </div>
    )
@@ -30,9 +34,9 @@ const Hobbies = () => {
         </h3>
         <div className="max-w-[600px]">
           <div className="sm:flex justify-between">
-            <BigText text="100" subtext="Animes Watched" />
-            <BigText text="2500" subtext="Coffee Cups" />
-            <BigText text="999" subtext="Songs Loved" />
+            <BigText text={100} subtext="Animes Watched" />
+            <BigText text={2500} subtext="Coffee Cups" />
+            <BigText text={999} subtext="Songs Loved" />
           </div>
         </div>
       </div>
