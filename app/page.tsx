@@ -1,4 +1,4 @@
-import { About, Hero } from '@/components'
+import { About, Hero, Hobbies } from '@/components'
 import React from 'react'
 
 const Home = () => {
@@ -6,6 +6,7 @@ const Home = () => {
     <main className=''>
       <Hero /> 
       <About />
+      <Hobbies />
     </main>
   )
 }
