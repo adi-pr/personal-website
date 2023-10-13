@@ -11,7 +11,7 @@ const staatliches = Staatliches({ subsets: ["latin"], weight: ["400"] });
 const Hero = () => {
   return (
     <section
-      className={`${staatliches.className} bg-[#191923] text-white w-full h-[50vh] md:h-[100vh] landscape:h-[100vh] flex justify-center items-center relative overflow-hidden`}
+      className={`${staatliches.className} z-20 bg-[#191923] text-white w-full h-[50vh] md:h-[100vh] landscape:h-[100vh] flex justify-center items-center relative overflow-hidden`}
     >
       <ScrollingText />
       <div className="max-w-[1000px] lg:text-[80px] md:text-[64px] text-[32px] z-10 flex flex-col items-center">
@@ -35,7 +35,7 @@ const Hero = () => {
           whileTap={{ scale: 0.9 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
-          <p> <span className="opacity-60">🪄</span> THE CODE WIZARD</p>
+          <p>🪄THE CODE WIZARD</p>
         </m.div>
       </div>
     </section>
