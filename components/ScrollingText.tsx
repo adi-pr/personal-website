@@ -63,10 +63,9 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
    * dynamically generated number of children.
    */
   return (
-    <div className="text-[5rem]">
+    <div className="text-[5rem] md:text-[5rem]">
       <motion.div style={{ x }}>
         <div className="whitespace-nowrap">
-            <span>{children} </span>
             <span>{children} </span>
             <span>{children} </span>
             <span>{children} </span>
@@ -83,8 +82,8 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
 export default function ScrollingText() {
   return (
     <section className="absolute opacity-60 flex flex-col justify-between h-full items-center ">
-      <ParallaxText baseVelocity={-5}>Aditya Prasad</ParallaxText>
-      <ParallaxText baseVelocity={5}>The Code Wizard</ParallaxText>
+      <ParallaxText baseVelocity={-3}>Aditya Prasad</ParallaxText>
+      <ParallaxText baseVelocity={3}>The Code Wizard | </ParallaxText>
     </section>
   );
 }
