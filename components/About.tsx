@@ -70,7 +70,7 @@ const BgParticles = () => {
     []
   );
   return (
-    <div className="w-full relative">
+    <div className="w-full absolute">
       <Particles
         init={particlesInit}
         loaded={particlesLoaded}
@@ -78,10 +78,6 @@ const BgParticles = () => {
           fpsLimit: 120,
           interactivity: {
             events: {
-              onClick: {
-                enable: true,
-                mode: "push",
-              },
               onHover: {
                 enable: true,
                 mode: "repulse",

@@ -1,16 +1,17 @@
-import { About, Footer, Hero, Hobbies, Skills } from '@/components'
-import React from 'react'
+import { About, Footer, Hero, Hobbies, Projects, Skills } from "@/components";
+import React from "react";
 
 const Home = () => {
   return (
     <main>
-      <Hero /> 
+      <Hero />
       <About />
       <Hobbies />
       <Skills />
-      <Footer /> 
+      <Projects />
+      <Footer />
     </main>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
