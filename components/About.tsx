@@ -27,7 +27,7 @@ const About = () => {
         viewport={{ once: true }}
         transition={{
           duration: 0.25,
-          delay: 0.1,
+          delay: 0.5,
         }}
       >
         <div className="w-full ">

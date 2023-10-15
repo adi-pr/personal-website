@@ -66,7 +66,8 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
 export default function ScrollingText() {
   return (
     <section className="absolute opacity-60 flex flex-col justify-between h-full items-center ">
-      <ParallaxText baseVelocity={3}>Aditya Prasad</ParallaxText>
+      {/* <ParallaxText baseVelocity={3}>Aditya Prasad</ParallaxText> */}
+      <ParallaxText baseVelocity={3}>Full Stack JavaScript Developer • Student • Guru •</ParallaxText>
       <ParallaxText baseVelocity={-3}>Full Stack JavaScript Developer • Student • Guru •</ParallaxText>
     </section>
   );
