@@ -2,6 +2,8 @@
 
 import { motion as m } from "framer-motion";
 
+import { Link } from 'react-scroll';
+
 import { Staatliches } from "next/font/google";
 import Image from "next/image";
 import { ScrollingText } from ".";
@@ -41,7 +43,15 @@ const Hero = () => {
           whileTap={{ scale: 0.9 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
-          <p>🪄THE CODE WIZARD</p>
+          <Link
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            <p>🪄THE CODE WIZARD</p>
+          </Link>
         </m.div>
       </m.div>
     </section>
