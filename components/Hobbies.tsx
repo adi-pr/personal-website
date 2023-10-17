@@ -13,7 +13,7 @@ const unica_One = Unica_One({ subsets: ["latin"], weight: ["400"] });
 const BigText = ({ text, subtext }: { text: number, subtext: string }) => {
    return (
     <div className="py-4 md:p-0">
-        <h2 className={`${unica_One.className} text-white text-[32px]`}><CountUp start={0} end={text} duration={2.75} enableScrollSpy={true} /></h2>
+        <h2 className={`${unica_One.className} text-white text-[32px]`}><CountUp start={0} end={text} duration={2.75} enableScrollSpy={true} scrollSpyOnce={true} /></h2>
         <p className={`${instrument_sans.className} text-base text-[#F39237]`}>{subtext}</p>
     </div>
    )
