@@ -2,6 +2,7 @@ export const iconMap = {
     'css': '/icons/icons8-css.svg',
     'tailwind': '/icons/icons8-tailwind-css.svg',
     'material-ui': '/icons/icons8-material-ui.svg',
+    'framer motion': '/icons/framer-logo.svg',
     'html': '/icons/icons8-html.svg',
     'javascript': '/icons/icons8-javascript.svg',
     'typescript': '/icons/icons8-typescript.svg',
@@ -16,4 +17,5 @@ export const iconMap = {
     'github': '/icons/icons8-github.svg',
     'figma': '/icons/icons8-figma.svg',
     'vite': '/icons/icons8-vite.svg',
+    'linux': '/icons/linux.svg',
   };

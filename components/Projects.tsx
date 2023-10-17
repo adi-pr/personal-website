@@ -17,7 +17,7 @@ const ArrowAnimation = ({ onHover }: { onHover: boolean }) => {
   }, [onHover]);
 
   return (
-    <div className="-rotate-90 w-[60px] h-[60px]">
+    <div className="-rotate-90 w-[70px] h-[70px]">
       <Lottie
       loop={false}
         lottieRef={arrowRef}

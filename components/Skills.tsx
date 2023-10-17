@@ -28,7 +28,7 @@ const Skills = () => {
         <div className="p-4 md:p-8">
             <h2 className={`${unica_One.className} text-white text-[65px] lg:text-[165px] md:text-[117px] `}>My Skills</h2>
         <div className="max-w-[600px]">
-            <div className="rounded-lg flex flex-wrap justify-center items-center gap-10 p-2 bg-[#403F4C]">
+            <div className="rounded-lg grid md:grid-cols-4 grid-cols-3 justify-center items-center gap-10 p-3 bg-[#403F4C]">
                 {Object.entries(iconMap).map(([key, value], index) => (
                     <m.div key={key} className="flex flex-col justify-center items-center"
                         variants={fadeInAnimationVariants}
@@ -40,8 +40,8 @@ const Skills = () => {
                         <Image
                             src={value}
                             alt="skill icon"
-                            width={40}
-                            height={40}
+                            width={36}
+                            height={36}
                             />
                         <p className="capitalize text-white">{key}</p>
                     </m.div>
