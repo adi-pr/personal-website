@@ -1,3 +1,9 @@
+import { Staatliches, Unica_One } from "next/font/google";
+
+export const unica_one = Unica_One({ subsets: ["latin"], weight: ["400"] });
+
+export const staatliches = Staatliches({ subsets: ["latin"], weight: ["400"] });
+
 export const iconMap = {
   css: "/icons/icons8-css.svg",
   tailwind: "/icons/icons8-tailwind-css.svg",

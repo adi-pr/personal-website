@@ -1,7 +1,5 @@
 "use client";
 
-import { Staatliches, Unica_One } from "next/font/google";
-
 import { motion as m } from "framer-motion";
 
 import { useCallback } from "react";
@@ -9,8 +7,7 @@ import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
-const staatliches = Staatliches({ subsets: ["latin"], weight: ["400"] });
-const unica_One = Unica_One({ subsets: ["latin"], weight: ["400"] });
+import { unica_one, staatliches } from "@/constants";
 
 const About = () => {
   return (
@@ -38,7 +35,7 @@ const About = () => {
           </h2>
           <div className="max-w-[600px]">
             <h3
-              className={`${unica_One.className} text-white sm:text-[32px] md:text-[50px] mt-5`}
+              className={`${unica_one.className} text-white sm:text-[32px] md:text-[50px] mt-5`}
             >
               I study computer science at the University of Guyana, to transform
               into an exceptional software engineer.

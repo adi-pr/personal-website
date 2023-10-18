@@ -4,11 +4,10 @@ import { motion as m } from "framer-motion";
 
 import { Link } from 'react-scroll';
 
-import { Staatliches } from "next/font/google";
+import { staatliches } from "@/constants";
 import Image from "next/image";
 import { ScrollingText } from ".";
 
-const staatliches = Staatliches({ subsets: ["latin"], weight: ["400"] });
 
 const Hero = () => {
   return (
