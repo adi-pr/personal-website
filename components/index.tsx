@@ -5,5 +5,6 @@ import ScrollingText from "./ScrollingText";
 import Skills from "./Skills";
 import Footer from "./Footer";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
-export { Hero, About, Hobbies, ScrollingText, Skills, Footer, Projects };
+export { Hero, About, Hobbies, ScrollingText, Skills, Footer, Projects, Contact };

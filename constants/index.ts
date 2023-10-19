@@ -22,7 +22,7 @@ export const iconMap = {
 
 export const projectData = [
   { number: 1, name: "WhatsApp Bot", github: "https://github.com/adi-pr/whatsapp-bot.git" },
-  { number: 2, name: "Car Showcase Website", github: "https://github.com/adi-pr/car-showcase-website.git", livePreview: "" },
-  { number: 3, name: "Library Manager", github: "https://github.com/adi-pr/Library-Manager.git" },
+  { number: 2, name: "Car Showcase Website", github: "https://github.com/adi-pr/car-showcase-website.git" },
+  { number: 3, name: "Library Manager (Built with Python Tkinter)", github: "https://github.com/adi-pr/Library-Manager.git" },
   { number: 4, name: "CV Application", github: "https://github.com/adi-pr/cv-application.git" },
 ];
